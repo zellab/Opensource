@@ -1,0 +1,33 @@
+{
+  "name": "node-notes",
+  "version": "1.0.0",
+  "description": "A Simple Node.js Notes Application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zellab/mern-notes-app.git"
+  },
+  "keywords": [
+    "node",
+    "react",
+    "mern",
+    "mongo",
+    "express"
+  ],
+  "author": "Hari",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zellab/mern-notes-app/issues"
+  },
+  "homepage": "https://github.com/zellab/mern-notes-app#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "http-errors": "^1.8.0",
+    "mongoose": "^5.10.9"
+  }
+}
