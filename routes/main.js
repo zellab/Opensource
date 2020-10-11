@@ -4,7 +4,6 @@ let router = express.Router()
 
 //import the model
 let noteSchema = require("../models/note")
-const { NotExtended } = require("http-errors")
 
 router.route("/").get((req, res) => {
     noteSchema.find(req.params, (error, data) => {
