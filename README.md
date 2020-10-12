@@ -16,20 +16,15 @@ npm i create-react-app -g
 create-react-app client
 ```
 
-2. add Axios to the React App
+2. Add Axios and Concurrently to the React App
 
 ```
 cd client
 npm i axios --save
+npm i concurrently -g
 ```
 
-3. Add Bootstrap to `<head>` tag 
-
-```html
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-```
-
-4. add the following to package.json inside the client folder
+3. add the following to package.json inside the client folder
 
 ```json
 "scripts": {
@@ -38,4 +33,10 @@ npm i axios --save
     "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
     "start": "node server.js"
 },
+```
+
+4. Add Bootstrap to `<head>` tag 
+
+```html
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 ```
