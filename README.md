@@ -11,13 +11,22 @@
 
 1. Add Bootstrap to <head> tag 
 
-<code>
+<pre><code>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-</code>
+</code></pre>
 
 2. add Axios to the React App
 
-<code>
-cd client
+<pre><code>
+cd client <br>
 npm i axios --save
-</code>
+</code></pre>
+
+3. add the following to package.json inside the client folder
+
+<pre><code>
+"client": "npm run start --prefix client",
+"server": "nodemon server.js",
+"dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+"start": "node server.js"
+</code></pre>

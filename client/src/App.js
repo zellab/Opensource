@@ -57,10 +57,10 @@ class App extends Component {
         {/* Form to add new notes */}
         <form onSubmit={this.submitHandler}>
           <div>
-            <textarea className="form-control mb-2" type="text" name="content" value={content} onChange={this.changeHandler}/>
+            <textarea className="form-control mb-2" type="text" name="content" value={content} onChange={this.changeHandler} required="true"/>
           </div>
           <div>
-            <input className="form-control mb-2" type="text" name="tag" value={tag} onChange={this.changeHandler}/>
+            <input className="form-control mb-2" type="text" name="tag" value={tag} onChange={this.changeHandler} required="true"/>
           </div>
           <button className="btn btn-primary" type="submit">Add</button>
         </form>
