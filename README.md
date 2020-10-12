@@ -9,23 +9,32 @@
 
 ### Frontend Configuration
 
-1. Add Bootstrap to `<head>` tag 
+1. Create a React app
+
+```
+npm i create-react-app -g
+create-react-app client
+```
+
+3. Add Bootstrap to `<head>` tag 
 
 
-`<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">`
+```html
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+```
 
 2. add Axios to the React App
 
-<pre><code>
-cd client <br>
+```
+cd client
 npm i axios --save
-</code></pre>
+```
 
-3. add the following to package.json inside the client folder
+4. add the following to package.json inside the client folder
 
-<pre><code>
+```json
 "client": "npm run start --prefix client",
 "server": "nodemon server.js",
 "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
 "start": "node server.js"
-</code></pre>
+```
