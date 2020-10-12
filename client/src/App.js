@@ -53,6 +53,7 @@ class App extends Component {
         <div className="col-xs-8">
         <h5 className="mt-5">HYPERNOTES</h5>
         <div className="divider" />
+        
         {/* Form to add new notes */}
         <form onSubmit={this.submitHandler}>
           <div>
@@ -64,14 +65,13 @@ class App extends Component {
           <button className="btn btn-primary" type="submit">Add</button>
         </form>
         <div className="divider" />
+        
         {/* Display the Notes */}
         {this.state.notes.map((note) => (
           <div className="card mt-4 mb-4">
            <div className="card-body">
-              <p className="card-title font-weight-bold" key={note._id}>{note.tag}</p>
-              <p className="card-subtitle mb-2 text-muted" key={note._id}>
-              {note.content}             
-              </p>
+              <p className="font-weight-bold">{note.tag}</p>
+              <p className="mb-2">{note.content}</p>
               <button className="btn btn-danger" onClick={() => this.deleteNote(note._id)}>X</button>
             </div>
           </div>
