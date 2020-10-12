@@ -32,8 +32,10 @@ npm i axios --save
 4. add the following to package.json inside the client folder
 
 ```json
-"client": "npm run start --prefix client",
-"server": "nodemon server.js",
-"dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
-"start": "node server.js"
+"scripts": {
+    "client": "npm run start --prefix client",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "start": "node server.js"
+},
 ```
